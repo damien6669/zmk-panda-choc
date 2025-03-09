@@ -75,6 +75,8 @@
 &trans         &trans        &trans  &trans  &trans  &trans  &none     &none   &trans       &trans    &trans    &trans     &trans   &trans
                              &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans
             >;
+
+            sensor-bindings = <&rotate_rgb_brightness>;
         };
 
         raise_layer {
