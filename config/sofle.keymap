@@ -29,11 +29,11 @@
     };
 
     behaviors {
-        rgb_ug: rgb_ug {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "RGB_UG";
-            #sensor-binding-cells = <2>;
-            bindings = <&rgb_ug>, <&rgb_ug>;
+        rotate_rgb_brightness: rotate_rgb_brightness {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROTATE_RGB_BRIGHTNESS";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
     };
 
