@@ -79,7 +79,7 @@
 
             sensor-bindings =
                 <&rotate_rgb_brightness>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         raise_layer {
