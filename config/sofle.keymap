@@ -70,14 +70,16 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp LG(TILDE)  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6       &kp F7    &kp F8    &kp F10    &kp F11  &kp F12
-&trans         &trans  &trans  &trans  &trans  &trans                    &kp PAGE_UP  &gresc    &kp UP    &mkp RCLK  &trans   &kp DEL
-&trans         &trans  &trans  &trans  &trans  &trans                    &kp PG_DN    &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
-&trans         &trans  &trans  &trans  &trans  &trans  &none     &none   &trans       &trans    &trans    &trans     &trans   &trans
-                       &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans
+&kp LG(TILDE)  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                               &kp F6       &kp F7    &kp F8    &kp F10    &kp F11       &kp F12
+&trans         &trans  &trans  &trans  &trans  &trans                               &kp PAGE_UP  &kp TAB   &kp UP    &mkp RCLK  &kp RG(UP)    &kp DEL
+&trans         &trans  &trans  &trans  &trans  &trans                               &kp PG_DN    &kp LEFT  &kp DOWN  &kp RIGHT  &kp RG(DOWN)  &kp RIGHT_SHIFT
+&trans         &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG    &mkp MB3  &trans       &trans    &trans    &trans     &trans        &trans
+                       &trans  &trans  &trans  &trans  &trans             &trans    &trans       &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rotate_rgb_brightness>;
+            sensor-bindings =
+                <&rotate_rgb_brightness>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         raise_layer {
